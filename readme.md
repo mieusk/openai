@@ -7,7 +7,7 @@ A simple Lua wrapper for the OpenAI API using `coro-http`. This library allows y
 - Uses `coro-http` for HTTP requests
 
 ## Installation
-Make sure you have Luvit and `coro-http` installed via `lit install luvit/coro-http`.
+`lit install mieusk/openai`
 
 ## Usage
 ```lua
