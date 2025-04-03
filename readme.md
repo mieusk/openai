@@ -2,7 +2,7 @@
 
 A simple Lua wrapper for the OpenAI API using `coro-http`. This library allows you to easily interact with OpenAI's GPT models. Standard `gpt-4o-mini`.
 
-<a href="https://platform.openai.com">Get you key</a>
+<a href="https://platform.openai.com">Get your key</a>
 
 - Uses `coro-http` for HTTP requests
 
