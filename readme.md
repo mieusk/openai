@@ -7,14 +7,14 @@ A simple Lua wrapper for the OpenAI API using `coro-http`. This library allows y
 - Uses `coro-http` for HTTP requests
 
 ## Installation
-Make sure you have Lua and `coro-http` installed.
+Make sure you have Luvit and `coro-http` installed via `lit install luvit/coro-http`.
 
 ## Usage
 ```lua
-local openai = require("openai")
-local api = OpenAI:new("your_api_key_here")
+local openai = require('openai')
+local api = openai:new('your_api_key_here')
 
-local response = api:chat({{role="user", content="Hello, how are you?"}})
+local response = api:chat({{role='user', content='What is 1 plus 1?'}})
 print(response.choices[1].message.content)
 ```
 
