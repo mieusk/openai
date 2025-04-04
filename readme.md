@@ -16,6 +16,16 @@ local response = api:chat({{role='user', content='What is 1 plus 1?'}})
 print(response.choices[1].message.content)
 ```
 
+You can change the model by writing the model-name as second argument in `api:chat({{role, content}}, second)`. For Exemple:
+
+```lua
+local api = require('openai'):new('your_api_key_here')
+
+print(api:chat({{role='user', content='Search cientific articles about Alzheimer'}}, 'gpt-4o').choices[1].message.content))
+```
+
+You can change roles too. Read about roles here: <a href="https://platform.openai.com/docs/guides/prompt-engineering#messages-and-roles">platform.openai.com/docs/guides/prompt-engineering#messages-and-roles</a>
+
 ## License
 Copyright (c) 2025 mieusk/openai
 
