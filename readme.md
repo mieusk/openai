@@ -16,7 +16,7 @@ local response = api:chat({{role='user', content='What is 1 plus 1?'}})
 print(response.choices[1].message.content)
 ```
 
-You can change the model by writing the model-name as second argument in `api:chat({{role, content}}, second)`. For Exemple:
+You can change the model by writing the model-name as second argument in `api:chat({{role='...', content='...'}}, model)`. For Exemple:
 
 ```lua
 local api = require('openai'):new('your_api_key_here')
